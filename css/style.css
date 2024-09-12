@@ -7,7 +7,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: #421e1b;
-    font-size: larger;
+    font-size: x-large;
     padding: 2px;
     margin: auto;
 }
@@ -31,7 +31,6 @@ nav li {
 
 body{
     background-color: #421e1b;
-    font-size: large;
 }
 header {
     text-align: center;
@@ -39,6 +38,7 @@ header {
 p {
     text-align: justify;
     color: #e4db8b;
+    font-size: x-large;
 }
   
 .dropcap::first-letter {
@@ -79,7 +79,7 @@ li a {
     width: 50%;
 }
 
-div {
+.box {
     width: auto;
     border: 5px solid #FFD700;
     padding: 15px;
@@ -116,4 +116,24 @@ main aside {
   
       order: 1;
     }
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #421e1b;
+    text-align: center;
+    border-right: #421e1b;
+    border-left: #421e1b;
+    border-style: double;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: grid;
+    border-right: #421e1b;
+    border-left: #421e1b;
+    border-style: double;
 }

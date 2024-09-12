@@ -2,6 +2,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style.css">
         <title>Short History of Roman Empire</title>
 
@@ -26,16 +27,23 @@
                     <li>
                         <a href="#inthewest">Fall in the West and survival in the East</a>
                     </li>
-                    <li>
-                        <a href="emperors">List of Emperors</a>
-                    </li>
+                    <div class="dropdown">
+                        <li>
+                            <a href="#emperors">List of Emperors</a>
+                            <div class="dropdown-content">
+                                <a href="#inthewest">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                    </div>
                 </ul>
             </nav>
 
         </header>
 
         <main>
-            <div class="content">
+            <div class="content box">
 
                 <h2 id="reptoemp">Transition from Republic to Empire</h2>
                     <p class="dropcap">
@@ -48,7 +56,7 @@
                         was always bestowed to the early emperors.
                     </p>
 
-                     <p>
+                    <p>
                         Rome suffered a long series of internal conflicts, conspiracies, and civil wars from the late second century BC (see Crisis of the Roman Republic) while
                         greatly extending its power beyond Italy. In 44 BC Julius Caesar was briefly perpetual dictator before being assassinated by a faction that opposed his
                         concentration of power. This faction was driven from Rome and defeated at the Battle of Philippi in 42 BC by Mark Antony and Caesar's adopted son Octavian.
@@ -75,6 +83,25 @@
                     </p>
 
                     <h2 id="classtolate">Transition from classical to late antiquity</h2>
+                    <p>
+                        In the view of contemporary Greek historian Cassius Dio, the accession of Commodus in 180 marked the descent "from a kingdom of gold to one of rust and iron",
+                        a comment which has led some historians, notably Edward Gibbon, to take Commodus' reign as the beginning of the Empire's decline.
+                    </p>
+                    <p>
+                        In 212, during the reign of Caracalla, Roman citizenship was granted to all freeborn inhabitants of the empire. The Severan dynasty was tumultuous; an emperor's
+                        reign was ended routinely by his murder or execution and, following its collapse, the Empire was engulfed by the Crisis of the Third Century, a period of
+                        invasions, civil strife, economic disorder, and plague. In defining historical epochs, this crisis sometimes marks the transition from Classical to Late Antiquity.
+                        Aurelian (r. 270–275) stabilised the empire militarily and Diocletian reorganised and restored much of it in 285.[44] Diocletian's reign brought the empire's most
+                        concerted effort against the perceived threat of Christianity, the "Great Persecution".
+                    </p>
+                    <p>
+                        Diocletian divided the empire into four regions, each ruled by a separate tetrarch. Confident that he fixed the disorder plaguing Rome, he abdicated along with
+                        his co-emperor, but the Tetrarchy collapsed shortly after. Order was eventually restored by Constantine the Great, who became the first emperor to convert to
+                        Christianity, and who established Constantinople as the new capital of the Eastern Empire. During the decades of the Constantinian and Valentinian dynasties,
+                        the empire was divided along an east–west axis, with dual power centres in Constantinople and Rome. Julian, who under the influence of his adviser Mardonius
+                        attempted to restore Classical Roman and Hellenistic religion, only briefly interrupted the succession of Christian emperors. Theodosius I, the last emperor to
+                        rule over both East and West, died in 395 after making Christianity the state religion.
+                    </p>
 
                     <h2 id="inthewest">Fall in the West and survival in the East</h2>
                     
@@ -82,7 +109,7 @@
             </div>
 
             <aside>
-                <div>
+                <div class="box">
                 
                      <img src="/img/Better_Imperial_Aquila.png" alt="ImperialAquila" class="imgcenter">
                     <p style="text-align: center;">Imperial Aquila</p>
