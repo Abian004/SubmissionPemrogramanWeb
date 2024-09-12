@@ -1,3 +1,16 @@
+header {
+    display: inline;
+}
+
+nav {
+    color: #e4db8b;
+    position: sticky;
+    top: 0;
+    background-color: #421e1b;
+    font-size: larger;
+    padding: 2px;
+    margin: auto;
+}
 nav a{
     color: #e4db8b;
     text-decoration: none;
@@ -10,12 +23,15 @@ nav a:hover {
 nav li {
     text-align: center;
     display: inline;
-    border-bottom: #421e1b;
+    border-right: #421e1b;
+    border-left: #421e1b;
+    border-style: double;
 }
 
 
 body{
     background-color: #421e1b;
+    font-size: large;
 }
 header {
     text-align: center;
@@ -24,7 +40,7 @@ p {
     text-align: justify;
     color: #e4db8b;
 }
-
+  
 .dropcap::first-letter {
     initial-letter: 2;
     font-weight: bold;
@@ -35,16 +51,20 @@ h2 {
     text-align: center;
     color: #f62b33;
 }
+h3 {
+    text-align: center;
+    color: #f62b33;
+}
 
 .layout {
     width: 100%;
   
     display: flex;
-    gap: 64px;
+    gap: 10px;
   }
   
-.grow9 { flex-grow: 7; }
-.grow1 { flex-grow: 3; }
+.content { flex-grow: 8; }
+.aside { flex-grow: 2; }
 
 li a {
     color: white;
@@ -57,4 +77,43 @@ li a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+div {
+    width: auto;
+    border: 5px solid #FFD700;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+main {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+  
+main aside {
+    order: 2;
+}
+
+@media screen and (min-device-width: 400px) {
+
+}
+  
+ 
+@media screen and (min-device-width: 600px) {
+    main {
+      flex-direction: row;
+    }
+  
+    #mainContent {
+      flex-basis: 70%;
+    }
+  
+    main aside {
+      flex-basis: 30%;
+  
+      order: 1;
+    }
 }
