@@ -40,6 +40,11 @@ p {
     color: #e4db8b;
     font-size: x-large;
 }
+figcaption {
+    text-align: justify;
+    color: #e4db8b;
+    font-size: x-large;
+}
   
 .dropcap::first-letter {
     initial-letter: 2;
@@ -81,7 +86,7 @@ li a {
 
 .box {
     width: auto;
-    border: 5px solid #FFD700;
+    border: 5px double #FFD700;
     padding: 15px;
     margin: 10px;
 }
@@ -126,14 +131,27 @@ main aside {
     position: absolute;
     background-color: #421e1b;
     text-align: center;
-    border-right: #421e1b;
-    border-left: #421e1b;
+    border-top: #421e1b;
     border-style: double;
 }
   
 .dropdown:hover .dropdown-content {
     display: grid;
-    border-right: #421e1b;
-    border-left: #421e1b;
+    border-top: #421e1b;
     border-style: double;
 }
+.goldjust {
+    text-align: center;
+    color: #e4db8b;
+    font-size: larger;
+}
+
+.emperorlayout {
+    width: 100%;
+  
+    display: flex;
+    gap: 16px;
+}
+  
+.growpharagraph { flex-grow: 0; }
+
