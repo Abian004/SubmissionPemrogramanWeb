@@ -90,6 +90,12 @@ li a {
     padding: 15px;
     margin: 10px;
 }
+.emperorbox {
+    width: auto;
+    border-top: 5px double #FFD700;
+    padding: 15px;
+    margin: 10px;
+}
 
 
 main {
