@@ -40,11 +40,6 @@ p {
     color: #e4db8b;
     font-size: x-large;
 }
-figcaption {
-    text-align: justify;
-    color: #e4db8b;
-    font-size: x-large;
-}
   
 .dropcap::first-letter {
     initial-letter: 2;
@@ -54,7 +49,7 @@ figcaption {
 
 h2 {
     text-align: center;
-    color: #FFD700;
+    color: #f62b33;
 }
 h3 {
     text-align: center;
@@ -83,23 +78,10 @@ li a {
     margin-right: auto;
     width: 50%;
 }
-.logocenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
-
 
 .box {
     width: auto;
-    border: 5px double #FFD700;
-    padding: 15px;
-    margin: 10px;
-}
-.emperorbox {
-    width: auto;
-    border-top: 5px double #FFD700;
+    border: 5px solid #FFD700;
     padding: 15px;
     margin: 10px;
 }
@@ -114,13 +96,9 @@ main {
 main aside {
     order: 2;
 }
-
-@media screen and (min-device-width: 400px) {
-
-}
   
  
-@media screen and (min-device-width: 600px) {
+@media screen and (min-width: 600px) {
     main {
       flex-direction: row;
     }
@@ -144,27 +122,14 @@ main aside {
     position: absolute;
     background-color: #421e1b;
     text-align: center;
-    border-top: #421e1b;
+    border-right: #421e1b;
+    border-left: #421e1b;
     border-style: double;
 }
   
 .dropdown:hover .dropdown-content {
     display: grid;
-    border-top: #421e1b;
+    border-right: #421e1b;
+    border-left: #421e1b;
     border-style: double;
 }
-.goldjust {
-    text-align: center;
-    color: #e4db8b;
-    font-size: larger;
-}
-
-.emperorlayout {
-    width: 100%;
-  
-    display: flex;
-    gap: 16px;
-}
-  
-.growpharagraph { flex-grow: 0; }
-
