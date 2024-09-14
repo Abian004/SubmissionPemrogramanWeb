@@ -54,7 +54,7 @@ figcaption {
 
 h2 {
     text-align: center;
-    color: #f62b33;
+    color: #FFD700;
 }
 h3 {
     text-align: center;
@@ -83,6 +83,13 @@ li a {
     margin-right: auto;
     width: 50%;
 }
+.logocenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
 
 .box {
     width: auto;
