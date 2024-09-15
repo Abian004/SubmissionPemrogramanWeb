@@ -1,25 +1,26 @@
 header {
     display: inline;
+    z-index: -1;
 }
 
 nav {
     color: #e4db8b;
     position: sticky;
-    top: 0;
     background-color: #421e1b;
     font-size: x-large;
     padding: 2px;
     margin: 2px;
 }
-nav a{
+a{
     color: #e4db8b;
     text-decoration: none;
     text-align: center;
 }
-nav a:hover {
+a:hover {
     text-decoration: underline;
     color: #FFD700;
 }
+
 nav li {
     text-align: center;
     display: inline;
@@ -95,6 +96,7 @@ li a {
 
 
 main {
+    z-index: 1;
     display: flex;
     padding: 20px;
     flex-direction: column;
@@ -136,27 +138,10 @@ main aside {
  
 figure {
     text-align: center;
-    width: 250;
     text-align: center;
     color: #e4db8b;
     font-size: medium;
 }
-
-.dropdown:hover .dropdown-content {
-    display: grid;
-    border-right: #421e1b;
-    border-left: #421e1b;
-    border-style: double;
-}
-.emperor-layout {
-    width: 100%;
-  
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 16px;
-}
-  
-.grow-emperor { flex-grow: 1; }
 
 .bottom-line {
     width: auto;
@@ -164,4 +149,17 @@ figure {
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
+}
+
+.image-hover {
+    width: 450px;
+    background-color: #e74c3c;
+    margin: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
+}
+
+.blurred {
+    filter: blur(5px);
 }
